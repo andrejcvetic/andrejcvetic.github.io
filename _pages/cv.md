@@ -8,7 +8,7 @@ description:
 toc: false 
 ---
 
-<p style="text-align:center;">
+<p style="text-align:center; margin-bottom: 30px;">
   You can download my CV 
   <a href="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" download style="font-weight: bold;">
   here
