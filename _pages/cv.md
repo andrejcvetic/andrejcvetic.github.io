@@ -17,7 +17,7 @@ toc: false
 <iframe 
   src="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" 
   width="100%" 
-  height="600px"
+  height="400px"
   style="border: none;">
 </iframe>
 
