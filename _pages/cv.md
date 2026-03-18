@@ -14,12 +14,12 @@ toc: false
   here
 </a>
   
-<div style="height: 30px;"></div>
+<div style="height: 15px;"></div>
 
 <iframe 
   src="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" 
   width="100%" 
-  height="500px"
+  height="450px"
   style="border: none;">
 </iframe>
 
