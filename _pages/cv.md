@@ -8,16 +8,18 @@ description:
 toc: false 
 ---
 
-<p style="text-align:center; margin-bottom: 30px;">
+<p style="text-align:center;">
   You can download my CV 
   <a href="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" download style="font-weight: bold;">
   here
 </a>
+  
+<div style="height: 30px;"></div>
 
 <iframe 
   src="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" 
   width="100%" 
-  height="400px"
+  height="500px"
   style="border: none;">
 </iframe>
 
