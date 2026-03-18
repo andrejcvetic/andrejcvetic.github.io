@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 1
-description: You can download my CV here.
+description:
 toc: false 
 ---
 
@@ -17,7 +17,7 @@ toc: false
 <iframe 
   src="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" 
   width="100%" 
-  height="800px"
+  height="600px"
   style="border: none;">
 </iframe>
 
