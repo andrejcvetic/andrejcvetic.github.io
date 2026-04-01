@@ -24,6 +24,24 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+I am a quantitative political scientist working in political psychology, public opinion, and comparative politics. 
+
+The core insight of my work is that hostile political climates fundamentally reshape integration processes—affecting not just immigrants' political behavior, attitudes, and identities, but also their mental health. To understand these dynamics, I examine how experienced hostilities emerge from political and normative shifts in host countries, and how misinformation shapes public opinion about immigrants.
+
+I leverage online and natural experiments, large-scale surveys, and textual analysis to:
+
+-understand how experienced hostilities in the host-country shape the integration of immigrants
+-connect experienced hostilities of immigrants with political changes in their host-countries
+-measure the changes in immigrants' attitudes, behaviour, and mental health
+-study how misinformation shapes public opinion about immigrants
+-develop new approaches to countering misinformation about immigrants
+
+Beyond my substantive focus on immigration, I also conduct research about democratic attitudes, effects of repression, and public health.
+
+
+I develop and test these insights using online and natural experiments, large-scale surveys, and textual analysis. Beyond immigration, I also investigate democratic attitudes, the effects of repression, and public health.
+
+
 I am  a behavioural political scientist, currently on the job market. 
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
