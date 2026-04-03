@@ -10,14 +10,14 @@ toc: false
 
 <p style="text-align:center;">
   You can download my CV 
-  <a href="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" download style="font-weight: bold;">
+  <a href="/assets/pdf/cvetic_cv.pdf" download style="font-weight: bold;">
   here.
 </a>
   
 <div style="height: 15px;"></div>
 
 <iframe 
-  src="/assets/pdf/Andrej_Cvetic_CVen_1022026.pdf" 
+  src="/assets/pdf/cvetic_cv.pdf" 
   width="100%" 
   height="450px"
   style="border: none;">
