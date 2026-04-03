@@ -33,4 +33,3 @@ I study how people navigate situations of political and social hostility. The co
 * how asexual individuals negotiate their identities, despite widespread mistrust and discrimination
 
 I develop and test these insights using experimental and quasi-experimental designs, longitudinal surveys, automated textual analysis and interviews. I apply these insights to understand conditions under which political and social hostilities escalate into an open conflict, remain in place or calm down.  
-
