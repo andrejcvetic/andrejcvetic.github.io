@@ -25,6 +25,25 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
+
+      {%- if entry.conf -%}
+        {%- if site.data.conferences[entry.conf] -%}
+          {% assign conf_style = null %}
+          {% if site.data.conferences[entry.conf].color != blank %}
+            {% assign conf_style = site.data.conferences[entry.conf].color | prepend: 'style="background-color:' | append: '"' %}
+          {%- endif -%}
+          <abbr class="badge rounded w-100" {% if conf_style %}{{ conf_style }}{% endif %}>
+            {% if site.data.conferences[entry.conf].url %}
+              <a href="{{ site.data.conferences[entry.conf].url }}">{{ entry.conf }}</a>
+            {% else %}
+              <div>{{- entry.conf -}}</div>
+            {% endif %}
+          </abbr>
+        {% else %}
+          <abbr class="badge rounded w-100">{{ entry.conf }}</abbr>
+        {%- endif -%}
+      {%- endif -%}
+
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -44,6 +63,7 @@
       {% endif %}
     </div>
   {% endif %}
+
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
