@@ -13,6 +13,21 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+{% include bib_search.liquid %}
+
 <div class="publications">
-  {% include bibliography.liquid %}
+
+{% for year in (2016..2023) reversed %}
+  <h2 class="bibliography">{{ year }}</h2>
+
+  <h3 class="bibliography">Articles</h3>
+  {% bibliography --query @*[year={{ year }}][cat=article]* --group_by none %}
+
+  <h3 class="bibliography">Chapters</h3>
+  {% bibliography --query @*[year={{ year }}][cat=chapter]* --group_by none %}
+
+  <h3 class="bibliography">Reviews</h3>
+  {% bibliography --query @*[year={{ year }}][cat=review]* --group_by none %}
+{% endfor %}
+
 </div>
