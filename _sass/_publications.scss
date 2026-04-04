@@ -30,11 +30,15 @@
     margin-top: 2rem;
     text-align: right;
   }
-
-    h3.bibliography {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  
+  h2.pub-category {
+    border: none;
+    text-align: right;
+    color: var(--global-text-color);
+    font-size: 1.5rem;
+    font-family: serif;       // or whatever font you prefer
+    font-weight: normal;
+    margin-top: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
