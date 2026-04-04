@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Radical Right
-description: Do immigrants react to electoral support for the populist right?
+description: Do immigrants react to electoral support for the radical right?
 importance: 1
 category: Immigration
 papers:
