@@ -21,7 +21,7 @@ nav_order: 2
 <h2 class="pub-category">Chapters</h2>
 {% bibliography --query @incollection %}
 
-<h2 class="pub-category">Reviews</h2>
+<h2 class="pub-category">Book Reviews</h2>
 {% bibliography --query @article[keywords=review] %}
 
 </div>
