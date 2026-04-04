@@ -5,7 +5,7 @@ permalink: /research/
 description: A growing collection of your cool projects.
 nav: true
 nav_order: 2
-display_categories: [how do immigrant, about immigrants]
+display_categories: [Immigration, State Repression, Public Health]
 horizontal: true
 ---
 
