@@ -297,8 +297,8 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: [year, cat]
-  group_order: [descending, ascending]
+  group_by: year
+  group_order: descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
@@ -338,6 +338,7 @@ filtered_bibtex_keywords:
     video,
     website,
     link,
+    cat
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
