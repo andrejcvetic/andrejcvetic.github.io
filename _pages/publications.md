@@ -15,13 +15,13 @@ nav_order: 2
 
 <div class="publications">
 
-<h2 class="bibliography">Articles</h2>
+<h2 class="pub-category">Articles</h2>
 {% bibliography --query @article[keywords=article] %}
 
-<h2 class="bibliography">Chapters</h2>
+<h2 class="pub-category">Chapters</h2>
 {% bibliography --query @incollection %}
 
-<h2 class="bibliography">Reviews</h2>
+<h2 class="pub-category">Reviews</h2>
 {% bibliography --query @article[keywords=review] %}
 
 </div>
