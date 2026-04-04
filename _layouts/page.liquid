@@ -19,11 +19,19 @@ layout: default
   </article>
 
   {% if page.related_publications %}
-    <h2>References</h2>
-    <div class="publications">
+  <h2>References</h2>
+  <div class="publications">
+    {% if page.papers %}
+      <!-- Filter papers by page.papers array -->
+      {% for paper_key in page.papers %}
+        {% bibliography --query @*[key={{ paper_key }}]* --group_by none %}
+      {% endfor %}
+    {% else %}
+      <!-- Fallback: show all cited papers -->
       {% bibliography --cited_in_order %}
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
+{% endif %}
 
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
