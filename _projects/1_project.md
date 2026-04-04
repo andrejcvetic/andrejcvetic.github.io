@@ -4,7 +4,12 @@ title: Radical Right
 description: 
 importance: 1
 category: Immigration
+papers:
+  - cveticwiptrust
+  - cveticwipsystemtrust
+  - cveticwipradicalhealth
 related_publications: true
+
 ---
 
 Every project has a beautiful feature showcase page.
