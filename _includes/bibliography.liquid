@@ -1,0 +1,25 @@
+<div class="bibliography-container">
+  {% assign years = site.bibliography | map: 'year' | uniq | sort | reverse %}
+  
+  {% for year in years %}
+    <h2 class="bibliography">{{ year }}</h2>
+    
+    {% assign articles = site.bibliography | where: 'year', year | where: 'cat', 'article' %}
+    {% if articles.size > 0 %}
+      <h3 class="bibliography">Articles</h3>
+      {% bibliography --query @*[year={{ year }}][cat=article]* --group_by none %}
+    {% endif %}
+    
+    {% assign chapters = site.bibliography | where: 'year', year | where: 'cat', 'chapter' %}
+    {% if chapters.size > 0 %}
+      <h3 class="bibliography">Chapters</h3>
+      {% bibliography --query @*[year={{ year }}][cat=chapter]* --group_by none %}
+    {% endif %}
+    
+    {% assign reviews = site.bibliography | where: 'year', year | where: 'cat', 'review' %}
+    {% if reviews.size > 0 %}
+      <h3 class="bibliography">Reviews</h3>
+      {% bibliography --query @*[year={{ year }}][cat=review]* --group_by none %}
+    {% endif %}
+  {% endfor %}
+</div>
