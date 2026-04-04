@@ -50,7 +50,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-radical-right",
           title: 'Radical Right',
-          description: "",
+          description: "Do immigrants react to electoral support for the populist right?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
