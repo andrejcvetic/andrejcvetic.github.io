@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /research/
-description: Ongoing research
+description: ongoing research
 nav: true
 nav_order: 2
 display_categories: [Immigration, State Repression, Public Health]
