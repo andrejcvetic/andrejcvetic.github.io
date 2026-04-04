@@ -15,6 +15,18 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+{% for year in (2023..2016) %}
+  <h2 class="bibliography">{{ year }}</h2>
+
+  <h3 class="bibliography">Articles</h3>
+  {% bibliography --query @*[year={{ year }}][cat=article]* --group_by none %}
+
+  <h3 class="bibliography">Chapters</h3>
+  {% bibliography --query @*[year={{ year }}][cat=chapter]* --group_by none %}
+
+  <h3 class="bibliography">Reviews</h3>
+  {% bibliography --query @*[year={{ year }}][cat=review]* --group_by none %}
+{% endfor %}
 
 </div>
+
