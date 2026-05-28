@@ -17,3 +17,11 @@
 "milosav":
   - firstname: ["Đorđe", "Đ.", "Đ. M.", "Đorđe Milosav"]
     url: https://www.djordjemilosav.com
+
+"grahn":
+  - firstname: ["Michal", "M.", "M. G.", "Michal Grahn"]
+    url: https://www.michalgrahn.com
+
+"allen":
+  - firstname: ["William", "W.", "W. A.", "William L. Allen"]
+    url: https://www.wlallen.com
