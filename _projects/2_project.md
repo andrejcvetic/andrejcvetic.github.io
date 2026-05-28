@@ -1,12 +1,16 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Asylum Seekers
+description: What impacts atttitudes towards asylum seekers?
 importance: 2
 category: Immigration
-giscus_comments: true
+papers:
+    - cveticwiphandbook
+    - cveticwipimmigrantsattrs
+related_publications: true
 ---
+
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
