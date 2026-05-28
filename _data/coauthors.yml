@@ -9,3 +9,11 @@
 "kovacevic":
   - firstname: ["Marko", "M.", "M. K.", "Marko Kovačević"]
     url: https://orcid.org/0000-0002-6799-0411
+    
+"zafirovic":
+  - firstname: ["Jovana", "J.", "J. Z.", "Jovana Zafirovic"]
+    url: https://jovanazafi.github.io/
+
+"milosav":
+  - firstname: ["Đorđe", "Đ.", "Đ. M.", "Đorđe Milosav"]
+    url: https://www.djordjemilosav.com
