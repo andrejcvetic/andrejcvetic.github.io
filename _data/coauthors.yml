@@ -25,3 +25,7 @@
 "allen":
   - firstname: ["William", "W.", "W. A.", "William L. Allen"]
     url: https://www.wlallen.com
+
+"byczynski":
+  - firstname: ["Gabriel", "G.", "G. B.", "Ganriel Byczynski"]
+  url: https://www.gabrielbyczynski.com
