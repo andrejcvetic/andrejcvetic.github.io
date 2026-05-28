@@ -48,9 +48,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-radical-right",
-          title: 'Radical Right',
-          description: "Do immigrants react to electoral support for the radical right?",
+          section: "News",},{id: "projects-immigrants-39-trust-and-the-radical-right",
+          title: 'Immigrants&amp;#39; Trust and the Radical Right',
+          description: "Do immigrants decrease their trust in the face of increased electoral support for the radical right?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-asylum-seekers",
