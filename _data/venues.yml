@@ -7,9 +7,16 @@
     url: https://regsecjournal.com
     color: "#2e4057"
 
+  "IJPEE":
+    url: https://www.inderscience.com/jhome.php?jcode=ijpee
+    color: "#6a0dad"
+
   "Edited Volume":
     color: "#00369f"
 
   "Working Paper":
     color: "#9b1c31"
+
+  "Pre-analysis Plan":
+    color: "#9f3600"
 
