@@ -7,6 +7,13 @@ nav: true
 nav_order: 4
 ---
 
+<p style="text-align:center;">
+  You can download my teaching statement 
+  <a href="/assets/pdf/cvetic_teaching_statement.pdf" download style="font-weight: bold;">
+  here.
+</a>
+  
+<div style="height: 15px;"></div>
 
 #### Trinity College Dublin
 
