@@ -65,37 +65,37 @@ nav: false
 
 <div id="articles" class="tab-content active">
   <div class="publications">
-    {% bibliography --query @article[keywords=article] --group_by none %}
+    {% bibliography --query @article[keywords=article] --group_by none --sort_by year --order descending %}
   </div>
 </div>
 
 <div id="underreview" class="tab-content">
   <div class="publications">
-    {% bibliography --query @*[keywords~=underreview] --group_by none %}
+    {% bibliography --query @*[keywords~=underreview] --group_by none --sort_by year --order descending %}
   </div>
 </div>
 
 <div id="workingpapers" class="tab-content">
   <div class="publications">
-    {% bibliography --query @*[keywords=workingpaper] --group_by none %}
+    {% bibliography --query @*[keywords=workingpaper] --group_by none --sort_by year --order descending %}
   </div>
 </div>
 
 <div id="preregistration" class="tab-content">
   <div class="publications">
-    {% bibliography --query @*[keywords~=workinprogress] --group_by none %}
+    {% bibliography --query @*[keywords~=workinprogress] --group_by none --sort_by year --order descending %}
   </div>
 </div>
 
 <div id="chapters" class="tab-content">
   <div class="publications">
-    {% bibliography --query @incollection --group_by none %}
+    {% bibliography --query @incollection --group_by none --sort_by year --order descending %}
   </div>
 </div>
 
 <div id="reviews" class="tab-content">
   <div class="publications">
-    {% bibliography --query @article[keywords=review] --group_by none %}
+    {% bibliography --query @article[keywords=review] --group_by none --sort_by year --order descending %}
   </div>
 </div>
 
