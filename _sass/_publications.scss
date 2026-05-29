@@ -84,10 +84,12 @@
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: none;
+          color: inherit;
 
           &:hover {
-            border-bottom-style: solid;
+            border-bottom: 1px solid var(--global-theme-color);
+            color: var(--global-theme-color);
             text-decoration: none;
           }
         }
