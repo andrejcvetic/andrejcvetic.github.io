@@ -8,8 +8,8 @@ nav_order: 4
 ---
 
 <p style="text-align:left;">
-  You can download my teaching statement 
-  <a href="/assets/pdf/cvetic_teaching_statement.pdf" download style="font-weight: bold;">here</a>.
+  You can read my teaching statement 
+  <a href="/assets/pdf/cvetic_teaching_statement.pdf" target="_blank" style="font-weight: bold;">here</a>.
 </p>
   
 <div style="height: 20px;"></div>
