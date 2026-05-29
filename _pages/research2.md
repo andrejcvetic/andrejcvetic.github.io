@@ -55,27 +55,39 @@ nav: false
 </div>
 
 <div id="articles" class="tab-content active">
-  {% bibliography --query @article[keywords=article] --group_by none %}
+  <div class="publications">
+    {% bibliography --query @article[keywords=article] %}
+  </div>
 </div>
 
 <div id="underreview" class="tab-content">
-  {% bibliography --query @*[keywords~=underreview] --group_by none %}
+  <div class="publications">
+    {% bibliography --query @*[keywords~=underreview] %}
+  </div>
 </div>
 
 <div id="workingpapers" class="tab-content">
-  {% bibliography --query @*[keywords=workingpaper] --group_by none %}
+  <div class="publications">
+    {% bibliography --query @*[keywords=workingpaper] %}
+  </div>
 </div>
 
 <div id="preregistration" class="tab-content">
-  {% bibliography --query @*[keywords~=workinprogress] --group_by none %}
+  <div class="publications">
+    {% bibliography --query @*[keywords~=workinprogress] %}
+  </div>
 </div>
 
 <div id="chapters" class="tab-content">
-  {% bibliography --query @incollection --group_by none %}
+  <div class="publications">
+    {% bibliography --query @incollection %}
+  </div>
 </div>
 
 <div id="reviews" class="tab-content">
-  {% bibliography --query @article[keywords=review] --group_by none %}
+  <div class="publications">
+    {% bibliography --query @article[keywords=review] %}
+  </div>
 </div>
 
 <script>
