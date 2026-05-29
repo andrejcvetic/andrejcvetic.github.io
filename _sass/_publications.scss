@@ -88,7 +88,7 @@
           color: inherit;
 
           &:hover {
-            border-bottom: 1px solid var(--global-theme-color);
+            border-bottom: none;
             color: var(--global-theme-color);
             text-decoration: none;
           }
