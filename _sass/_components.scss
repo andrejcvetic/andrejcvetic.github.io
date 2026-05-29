@@ -254,6 +254,11 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Lowercase publication buttons (PDF, ABS, etc.)
+a.btn.btn-sm {
+  text-transform: lowercase;
+}
+
 // diff2html
 
 .d2h-diff-table {
