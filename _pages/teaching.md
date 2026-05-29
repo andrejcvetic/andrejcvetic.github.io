@@ -20,8 +20,7 @@ nav_order: 4
 
 **Teaching Assistant**
 
-POU22031 Comparative Politics A, undergraduate, 2021–2024
-
+POU22031 Comparative Politics A, undergraduate, 2021–2024<br>
 POU22032 Comparative Politics B, undergraduate, 2022–2025
 
 <div style="height: 20px;"></div>
