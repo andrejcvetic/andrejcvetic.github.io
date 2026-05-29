@@ -2,14 +2,46 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description:
 nav: true
 nav_order: 4
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+#### Trinity College Dublin
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+**Teaching Assistant**
 
-{% include courses.liquid %}
+| | | |
+|---|---|---|
+| Comparative Politics A | undergraduate | 2021–2024 |
+| Comparative Politics B | undergraduate | 2022–2025 |
+
+**Grader**
+
+| | | |
+|---|---|---|
+| Research Methods A | undergraduate | 2024 |
+| Politics and Irish Society B | undergraduate | 2023 |
+
+**One-on-One Tutor** *(students with learning difficulties)*
+
+| | | |
+|---|---|---|
+| Research Methods B | undergraduate | 2026 |
+| Qualitative Methods | undergraduate | 2026 |
+
+**Supervision**
+
+| | | |
+|---|---|---|
+| Academic Writing and Book Reviewing Workshop Series | graduate | 2021–2025 |
+
+---
+
+#### University of Belgrade
+
+**Teaching Assistant**
+
+| | | |
+|---|---|---|
+| Introduction to Sociology | undergraduate | 2018–2019 |
