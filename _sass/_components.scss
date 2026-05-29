@@ -255,7 +255,9 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Co-author links: no colour/underline by default, highlight on hover
-.author a {
+.author a,
+.author a:link,
+.author a:visited {
   color: inherit !important;
   text-decoration: none !important;
 }
