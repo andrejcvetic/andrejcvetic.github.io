@@ -1,8 +1,9 @@
 ---
 layout: page
-title: research2
-permalink: /research2/
-nav: false
+title: research
+permalink: /research/
+nav: true
+nav_order: 2
 ---
 
 <style>
