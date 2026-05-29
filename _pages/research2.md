@@ -22,8 +22,9 @@ nav: false
   cursor: pointer;
   font-size: 0.95rem;
   color: var(--global-text-color);
-  border-radius: 4px;
+  border-radius: 0;
   transition: all 0.2s;
+  outline: none;
 }
 
 .tab-btn:hover {
@@ -33,7 +34,8 @@ nav: false
 
 .tab-btn.active {
   font-weight: bold;
-  border-bottom: 2px solid var(--global-text-color);
+  border-bottom: none;
+  outline: none;
 }
 
 .tab-content {
