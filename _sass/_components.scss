@@ -255,14 +255,14 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Co-author links: no colour/underline by default, highlight on hover
-.publications .author a {
-  color: inherit;
-  text-decoration: none;
+.author a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
-.publications .author a:hover {
-  color: var(--global-theme-color);
-  text-decoration: underline;
+.author a:hover {
+  color: var(--global-theme-color) !important;
+  text-decoration: underline !important;
 }
 
 // Lowercase publication buttons (PDF, ABS, etc.)
