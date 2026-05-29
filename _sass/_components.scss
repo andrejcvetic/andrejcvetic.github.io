@@ -254,6 +254,17 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Co-author links: no colour/underline by default, highlight on hover
+.publications .author a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publications .author a:hover {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+}
+
 // Lowercase publication buttons (PDF, ABS, etc.)
 a.btn.btn-sm {
   text-transform: lowercase;
