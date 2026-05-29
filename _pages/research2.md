@@ -58,7 +58,7 @@ nav: false
   <button class="tab-btn active" onclick="showTab('articles', this)">Peer Reviewed Articles</button>
   <button class="tab-btn" onclick="showTab('underreview', this)">Under Review</button>
   <button class="tab-btn" onclick="showTab('workingpapers', this)">Working Papers</button>
-  <button class="tab-btn" onclick="showTab('preregistration', this)">Pre-registration</button>
+  <button class="tab-btn" onclick="showTab('preregistration', this)">In Progress</button>
   <button class="tab-btn" onclick="showTab('chapters', this)">Chapters</button>
   <button class="tab-btn" onclick="showTab('reviews', this)">Reviews</button>
 </div>
