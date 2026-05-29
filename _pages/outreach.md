@@ -95,7 +95,7 @@ nav_order: 5
 
 <div id="media" class="tab-content">
   <table class="outreach-table">
-    <tr><td><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank">YouTube Short</a></td><td>2025</td></tr>
+    <tr><td><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank">Young Scholars Initiative Fresh Takes</a></td><td>2025</td></tr>
   </table>
 </div>
 
