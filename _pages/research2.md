@@ -82,6 +82,7 @@ nav_order: 2
   font-size: 0.95rem;
   font-weight: 600;
   flex-grow: 1;
+  margin-bottom: 0.4rem;
 }
 
 .tab-content .publications ol.bibliography li .author,
