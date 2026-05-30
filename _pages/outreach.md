@@ -138,7 +138,7 @@ nav_order: 3
 
     <div class="talk-card">
       <div class="talk-badge">Upcoming</div>
-      <div class="talk-title">It's not where they come from, but what they bring with themselves: Race, Sexuality and Disability in Attitudes Towards Immigrants</div>
+      <div class="talk-title">It's Not Where They Come From, but What They Bring with Themselves: Gender Expression, Sexuality, and Disability in Attitudes towards Asylum Seekers</div>
       <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026</div>
     </div>
 
