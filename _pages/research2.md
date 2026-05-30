@@ -51,11 +51,6 @@ nav_order: 2
   display: none;
 }
 
-.tab-content .col-sm-8 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
 .tab-content .publications ol.bibliography {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -75,7 +70,7 @@ nav_order: 2
 }
 
 .tab-content .publications ol.bibliography li .row,
-.tab-content .publications ol.bibliography li [class*="col-"] {
+.tab-content .publications ol.bibliography li .col-sm-8 {
   display: contents;
 }
 
