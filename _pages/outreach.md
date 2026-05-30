@@ -3,7 +3,7 @@ layout: page
 title: outreach
 permalink: /outreach/
 nav: true
-nav_order: 5
+nav_order: 3
 ---
 
 <style>
@@ -47,20 +47,48 @@ nav_order: 5
   display: block;
 }
 
-.outreach-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.outreach-table td {
-  padding: 0.4rem 0.5rem;
-  vertical-align: top;
-}
-
-.outreach-table td:last-child {
-  text-align: right;
-  white-space: nowrap;
+.talk-note {
+  font-size: 0.85rem;
   color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+}
+
+.talk-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.talk-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  background: var(--global-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.talk-card .talk-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  flex-grow: 1;
+}
+
+.talk-card .talk-title.no-title {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+.talk-card .talk-meta {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+}
+
+.talk-card .talk-link a {
+  font-size: 0.85rem;
 }
 </style>
 
@@ -71,32 +99,88 @@ nav_order: 5
 </div>
 
 <div id="conferences" class="tab-content active">
-  <p><em>* scheduled; † declined</em></p>
-  <table class="outreach-table">
-    <tr><td>European Political Science Society (EPSS)</td><td>2026*</td></tr>
-    <tr><td>European Political Science Association (EPSA)<br><em>How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</em></td><td>2024</td></tr>
-    <tr><td>UK Political Psychology (UK PolPsy)<br><em>How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</em></td><td>2024</td></tr>
-    <tr><td>German Political Psychology Network (24hPolPsy)<br><em>Host(ile) Country: Do Immigrants React to Electoral Support for the Far-right in Germany?</em><br><em>Social Trust among Muslim Immigrants: Evidence from an experimental design</em></td><td>2024</td></tr>
-    <tr><td>Politicologenetmaal<br><em>Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</em></td><td>2024</td></tr>
-  </table>
+  <p class="talk-note">* scheduled; † declined</p>
+  <div class="talk-cards">
+
+    <div class="talk-card">
+      <div class="talk-title no-title">Title TBC</div>
+      <div class="talk-meta">European Political Science Society (EPSS) · [City] · [Month] 2026*</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</div>
+      <div class="talk-meta">European Political Science Association (EPSA) · [City] · [Month] 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</div>
+      <div class="talk-meta">UK Political Psychology (UK PolPsy) · [City] · [Month] 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">Host(ile) Country: Do Immigrants React to Electoral Support for the Far-right in Germany?</div>
+      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · [City] · [Month] 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">Social Trust among Muslim Immigrants: Evidence from an experimental design</div>
+      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · [City] · [Month] 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
+      <div class="talk-meta">Politicologenetmaal · [City] · [Month] 2024</div>
+    </div>
+
+  </div>
 </div>
 
 <div id="workshops" class="tab-content">
-  <p><em>* scheduled; † declined</em></p>
-  <table class="outreach-table">
-    <tr><td>Politics and Mental Health in Times of Societal Threat: Wicked or Not?, University of Amsterdam (March)</td><td>2026†</td></tr>
-    <tr><td>Migration, Asylum, and Human Security in Europe, University of Southampton (June)</td><td>2026*</td></tr>
-    <tr><td>Research Workshop on Political Trust, Pompeu Fabra University (October)</td><td>2026*</td></tr>
-    <tr><td>COMPAS Work in Progress Series, University of Oxford (May)<br><em>Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</em></td><td>2024</td></tr>
-    <tr><td>CESS Colloquium, Nuffield College, University of Oxford (February)<br><em>The Effect of Electoral Support for Far-right on Institutional and Social Trust among Muslim Immigrants: Evidence from Germany</em></td><td>2024</td></tr>
-    <tr><td>Replication Webinar Series, Young Scholars Initiative (November)<br><em>In What Direction? Replication and Extension of Oskooii 2020 "Perceived Discrimination and Political Behavior"</em></td><td>2022</td></tr>
-  </table>
+  <p class="talk-note">* scheduled; † declined</p>
+  <div class="talk-cards">
+
+    <div class="talk-card">
+      <div class="talk-title no-title">Title TBC</div>
+      <div class="talk-meta">Politics and Mental Health in Times of Societal Threat: Wicked or Not? · University of Amsterdam, Netherlands · March 2026†</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title no-title">Title TBC</div>
+      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · June 2026*</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title no-title">Title TBC</div>
+      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · October 2026*</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
+      <div class="talk-meta">COMPAS Work in Progress Series · University of Oxford, UK · May 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">The Effect of Electoral Support for Far-right on Institutional and Social Trust among Muslim Immigrants: Evidence from Germany</div>
+      <div class="talk-meta">CESS Colloquium · Nuffield College, University of Oxford, UK · February 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">In What Direction? Replication and Extension of Oskooii 2020 "Perceived Discrimination and Political Behavior"</div>
+      <div class="talk-meta">Replication Webinar Series · Young Scholars Initiative · November 2022</div>
+    </div>
+
+  </div>
 </div>
 
 <div id="media" class="tab-content">
-  <table class="outreach-table">
-    <tr><td><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank">Young Scholars Initiative Fresh Takes</a></td><td>2025</td></tr>
-  </table>
+  <div class="talk-cards">
+
+    <div class="talk-card">
+      <div class="talk-title"><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank">Young Scholars Initiative Fresh Takes</a></div>
+      <div class="talk-meta">Young Scholars Initiative · Online · 2025</div>
+    </div>
+
+  </div>
 </div>
 
 <script>
