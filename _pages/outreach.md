@@ -103,33 +103,33 @@ nav_order: 3
   <div class="talk-cards">
 
     <div class="talk-card">
-      <div class="talk-title no-title">Title TBC</div>
-      <div class="talk-meta">European Political Science Society (EPSS) · [City] · [Month] 2026*</div>
+      <div class="talk-title">Autocratic Booms and Democratic Echoes: State Repression and Democratic Aspirations in Hybrid Regimes</div>
+      <div class="talk-meta">European Political Science Society (EPSS) · Belfast · June 2026*</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</div>
-      <div class="talk-meta">European Political Science Association (EPSA) · [City] · [Month] 2024</div>
+      <div class="talk-meta">European Political Science Association (EPSA) · Cologne · July 2024</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</div>
-      <div class="talk-meta">UK Political Psychology (UK PolPsy) · [City] · [Month] 2024</div>
+      <div class="talk-meta">UK Political Psychology (UK PolPsy) · Southampton · June 2024</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Host(ile) Country: Do Immigrants React to Electoral Support for the Far-right in Germany?</div>
-      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · [City] · [Month] 2024</div>
+      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · September 2024</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Social Trust among Muslim Immigrants: Evidence from an experimental design</div>
-      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · [City] · [Month] 2024</div>
+      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · September 2024</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
-      <div class="talk-meta">Politicologenetmaal · [City] · [Month] 2024</div>
+      <div class="talk-meta">Politicologenetmaal · Maastricht · June 2024</div>
     </div>
 
   </div>
@@ -140,18 +140,18 @@ nav_order: 3
   <div class="talk-cards">
 
     <div class="talk-card">
-      <div class="talk-title no-title">Title TBC</div>
+      <div class="talk-title">When Normalisation Comes at No Cost? Legitimisation of the Populist Right and Mental Health of Immigrants</div>
       <div class="talk-meta">Politics and Mental Health in Times of Societal Threat: Wicked or Not? · University of Amsterdam, Netherlands · March 2026†</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title no-title">Title TBC</div>
-      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · June 2026*</div>
+      <div class="talk-title">It's not where they come from, but what they bring with themselves: Race, Sexuality and Disability in Attitudes Towards Immigrants</div>
+      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026*</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title no-title">Title TBC</div>
-      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · October 2026*</div>
+      <div class="talk-title">In the System We Trust! Electoral Support for the Populist Right and Political Trust Among Immigrants in Western Europe</div>
+      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026*</div>
     </div>
 
     <div class="talk-card">
