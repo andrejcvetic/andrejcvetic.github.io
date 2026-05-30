@@ -126,7 +126,7 @@ nav_order: 3
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Host(ile) Country: Do Immigrants React to Electoral Support for the Far-Right in Germany?</div>
+      <div class="talk-title">The Effect of Electoral Support for Far-right on Institutional and Social Trust among Muslim Immigrants: Evidence from Germany</div>
       <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · September 2024</div>
     </div>
 

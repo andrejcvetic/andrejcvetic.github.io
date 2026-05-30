@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am (mostly) quantitative political scientist interested in political psychology, public opinion, and comparative politics. I am **currently on the job market**, after defending my Ph.D. at Political Science Department, Trinity College Dublin in March 2026. So far, my work has been supported by Research Ireland (Government of Ireland Postgraduate Scholar, 2023-2025) and Trinity College Dublin (Provost's Ph.D. Award, 2021-2023). 
+I am (mostly) quantitative political scientist interested in political psychology, public opinion, and comparative politics. I am **currently on the job market**, after obtaining my PhD in political science from <a href="https://www.tcd.ie/political-science/">Trinity College Dublin</a>. So far, my work has been supported by Research Ireland (<a href="https://research.ie/assets/uploads/2023/09/GOI-Awardee-list-2023.pdf">Government of Ireland Postgraduate Scholar, 2023-2025</a>) and Trinity College Dublin (Provost's Ph.D. Award, 2021-2023). 
 
 I study how people navigate situations of political and social hostility. The cornerstone of my work is that various cognitive, emotional and social resources people draw on can determine the outcomes of political hostilities. So far, I explored:
 
@@ -32,4 +32,4 @@ I study how people navigate situations of political and social hostility. The co
 * why citizens in hybrid regimes support democracy when exposed to state repression
 * how asexual individuals negotiate their identities, despite widespread mistrust and discrimination
 
-I develop and test these insights using experimental and quasi-experimental designs, longitudinal surveys, automated textual analysis and interviews. I apply these insights to understand conditions under which political and social hostilities escalate into an open conflict, remain in place or calm down.  
+I develop and test these insights using experimental and quasi-experimental designs, longitudinal surveys, automated textual analysis and interviews. I apply these insights to understand the both immediate and long-term consequences of political hostilities on individuals and communities.   
