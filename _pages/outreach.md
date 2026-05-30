@@ -92,7 +92,6 @@ nav_order: 3
 }
 
 .talk-card .talk-link a.btn {
-  font-size: 0.78rem;
   color: var(--global-text-color);
   border: 1px solid var(--global-text-color);
   padding: 0.25rem 1rem;
