@@ -74,7 +74,8 @@ nav_order: 2
   gap: 0.3rem;
 }
 
-.tab-content .publications ol.bibliography li .row {
+.tab-content .publications ol.bibliography li .row,
+.tab-content .publications ol.bibliography li [class*="col-"] {
   display: contents;
 }
 
