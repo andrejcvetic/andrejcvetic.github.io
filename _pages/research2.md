@@ -66,7 +66,7 @@ nav_order: 2
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.15rem;
 }
 
 .tab-content .publications ol.bibliography li .row,
@@ -77,8 +77,7 @@ nav_order: 2
 .tab-content .publications ol.bibliography li .title {
   font-size: 0.95rem;
   font-weight: 600;
-  flex-grow: 1;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
 }
 
 .tab-content .publications ol.bibliography li .author,
@@ -96,7 +95,7 @@ nav_order: 2
 }
 
 .tab-content .publications ol.bibliography li .links {
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
 }
 
 .tab-content .publications ol.bibliography li .periodical:empty,
