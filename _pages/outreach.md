@@ -63,6 +63,13 @@ nav_order: 3
   gap: 0.35rem;
 }
 
+.talk-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
 .talk-card .talk-badge {
   display: inline-block;
   font-size: 0.7rem;
@@ -70,7 +77,6 @@ nav_order: 3
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--global-theme-color);
-  margin-bottom: 0.1rem;
 }
 
 .talk-card .talk-title {
@@ -152,15 +158,19 @@ nav_order: 3
   <div class="talk-cards">
 
     <div class="talk-card">
-      <div class="talk-badge">Upcoming</div>
-      <div class="talk-badge">Workshop</div>
+      <div class="talk-card-badges">
+        <div class="talk-badge">Upcoming</div>
+        <div class="talk-badge">Workshop</div>
+      </div>
       <div class="talk-title">In the System We Trust! Electoral Support for the Populist Right and Political Trust Among Immigrants in Western Europe</div>
       <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-badge">Upcoming</div>
-      <div class="talk-badge">Workshop</div>
+      <div class="talk-card-badges">
+        <div class="talk-badge">Upcoming</div>
+        <div class="talk-badge">Workshop</div>
+      </div>
       <div class="talk-title">It's Not Where They Come From, but What They Bring with Themselves: Gender Expression, Sexuality, and Disability in Attitudes towards Asylum Seekers</div>
       <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026</div>
     </div>
