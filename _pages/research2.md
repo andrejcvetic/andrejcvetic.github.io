@@ -55,6 +55,44 @@ nav_order: 2
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+.tab-content .publications ol.bibliography {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tab-content .publications ol.bibliography li {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  background: var(--global-bg-color);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.tab-content .publications ol.bibliography li .row {
+  display: contents;
+}
+
+.tab-content .publications ol.bibliography li .title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.tab-content .publications ol.bibliography li .author,
+.tab-content .publications ol.bibliography li .periodical {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+}
+
+.tab-content .publications ol.bibliography li .links {
+  margin-top: 0.3rem;
+}
 </style>
 
 <div class="tab-buttons">
