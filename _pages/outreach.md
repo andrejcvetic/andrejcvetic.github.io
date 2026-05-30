@@ -85,8 +85,18 @@ nav_order: 3
   color: var(--global-text-color-light);
 }
 
-.talk-card .talk-link a {
+.talk-card .talk-link a.btn {
   font-size: 0.85rem;
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding: 0.25rem 1rem;
+  text-transform: lowercase;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
 }
 </style>
 
