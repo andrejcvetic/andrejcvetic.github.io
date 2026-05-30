@@ -91,7 +91,7 @@ nav_order: 2
 }
 
 .tab-content .publications ol.bibliography li .author a {
-  color: var(--global-text-color);
+  color: var(--global-text-color) !important;
 }
 
 .tab-content .publications ol.bibliography li .links {
