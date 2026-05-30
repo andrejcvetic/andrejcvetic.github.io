@@ -72,7 +72,7 @@ nav_order: 3
 
 .talk-card .talk-badge {
   display: inline-block;
-  font-size: 0.6rem !important;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
