@@ -99,6 +99,15 @@ nav_order: 2
   margin-top: 0.3rem;
 }
 
+.tab-content .publications ol.bibliography li .periodical:empty,
+.tab-content .publications ol.bibliography li .links:empty {
+  display: none;
+}
+
+.tab-content .publications ol.bibliography li .hidden:not(.open) {
+  display: none;
+}
+
 .tab-content .publications ol.bibliography li .pub-status-badge {
   display: inline-block;
   font-size: 0.7rem;
