@@ -178,7 +178,7 @@ nav_order: 3
       <div class="talk-badge">Interview</div>
       <div class="talk-title">Young Scholars Initiative Fresh Takes</div>
       <div class="talk-meta">Young Scholars Initiative · Online · 2025</div>
-      <div class="talk-link"><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank">Video</a></div>
+      <div class="talk-link"><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank" class="btn btn-sm z-depth-0" role="button">Video</a></div>
     </div>
 
   </div>
