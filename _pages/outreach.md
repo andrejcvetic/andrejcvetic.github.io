@@ -116,27 +116,27 @@ nav_order: 3
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</div>
+      <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
       <div class="talk-meta">European Political Science Association (EPSA) · Cologne · July 2024</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">How does legitimising radical right influence Muslim immigrants in Germany? A research agenda</div>
+      <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
       <div class="talk-meta">UK Political Psychology (UK PolPsy) · Southampton · June 2024</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Host(ile) Country: Do Immigrants React to Electoral Support for the Far-right in Germany?</div>
+      <div class="talk-title">Autocratic Booms and Democratic Echoes: State Repression and Democratic Aspirations in Hybrid Regimes</div>
+      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · February 2026</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">Host(ile) Country: Do Immigrants React to Electoral Support for the Far-Right in Germany?</div>
       <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · September 2024</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Social Trust among Muslim Immigrants: Evidence from an experimental design</div>
-      <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · September 2024</div>
-    </div>
-
-    <div class="talk-card">
-      <div class="talk-title">Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
+      <div class="talk-title">Discrimination That Matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
       <div class="talk-meta">Politicologenetmaal · Maastricht · June 2024</div>
     </div>
 
@@ -164,12 +164,12 @@ nav_order: 3
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Discrimination that matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
+      <div class="talk-title">Discrimination That Matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
       <div class="talk-meta">COMPAS Work in Progress Series · University of Oxford, UK · May 2024</div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">The Effect of Electoral Support for Far-right on Institutional and Social Trust among Muslim Immigrants: Evidence from Germany</div>
+      <div class="talk-title">The Effect of Electoral Support for Far-Right on Institutional and Social Trust among Muslim Immigrants: Evidence from Germany</div>
       <div class="talk-meta">CESS Colloquium · Nuffield College, University of Oxford, UK · February 2024</div>
     </div>
 

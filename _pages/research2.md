@@ -94,6 +94,10 @@ nav_order: 2
   color: var(--global-text-color) !important;
 }
 
+.tab-content .publications ol.bibliography li .author a:hover {
+  color: var(--global-theme-color) !important;
+}
+
 .tab-content .publications ol.bibliography li .links {
   margin-top: 0.3rem;
 }
