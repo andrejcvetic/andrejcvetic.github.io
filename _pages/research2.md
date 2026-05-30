@@ -97,11 +97,21 @@ nav_order: 2
 .tab-content .publications ol.bibliography li .links {
   margin-top: 0.3rem;
 }
+
+.tab-content .publications ol.bibliography li .pub-status-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  margin-bottom: 0.1rem;
+}
 </style>
 
 <div class="tab-buttons">
   <button class="tab-btn active" onclick="showTab('articles', this)">Peer Reviewed Articles</button>
-  <button class="tab-btn" onclick="showTab('underreview', this)">Under Review</button>
+  <button class="tab-btn" onclick="showTab('underreview', this)">In Publication</button>
   <button class="tab-btn" onclick="showTab('workingpapers', this)">Working Papers</button>
   <button class="tab-btn" onclick="showTab('preregistration', this)">In Progress</button>
   <button class="tab-btn" onclick="showTab('chapters', this)">Chapters</button>
