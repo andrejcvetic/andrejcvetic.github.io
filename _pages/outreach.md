@@ -212,6 +212,13 @@ nav_order: 3
       <div class="talk-link"><a href="https://www.youtube.com/shorts/ZUcHyi1tj-g" target="_blank" class="btn btn-sm z-depth-0" role="button">Video</a></div>
     </div>
 
+    <div class="talk-card">
+      <div class="talk-badge">Interview</div>
+      <div class="talk-title">PhD Perspectives</div>
+      <div class="talk-meta">Trinity College Dublin · Dublin · October 2024</div>
+      <div class="talk-link"><a href="https://www.tcd.ie/political-science/research/phd-perspectives/andrej-cvetic/" target="_blank" class="btn btn-sm z-depth-0" role="button">Read</a></div>
+    </div>
+
   </div>
 </div>
 
