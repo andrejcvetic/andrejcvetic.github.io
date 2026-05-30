@@ -148,32 +148,38 @@ nav_order: 3
 
     <div class="talk-card">
       <div class="talk-badge">Upcoming</div>
+      <div class="talk-badge">Workshop</div>
       <div class="talk-title">In the System We Trust! Electoral Support for the Populist Right and Political Trust Among Immigrants in Western Europe</div>
       <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-badge">Upcoming</div>
+      <div class="talk-badge">Workshop</div>
       <div class="talk-title">It's Not Where They Come From, but What They Bring with Themselves: Gender Expression, Sexuality, and Disability in Attitudes towards Asylum Seekers</div>
       <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026</div>
     </div>
 
     <div class="talk-card">
+      <div class="talk-badge">Workshop</div>
       <div class="talk-title">When Normalisation Comes at No Cost? Legitimisation of the Populist Right and Mental Health of Immigrants</div>
       <div class="talk-meta">Politics and Mental Health in Times of Societal Threat: Wicked or Not? · University of Amsterdam, Netherlands · March 2026</div>
     </div>
 
     <div class="talk-card">
+      <div class="talk-badge">Invited Talk</div>
       <div class="talk-title">Discrimination That Matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
       <div class="talk-meta">COMPAS Work in Progress Series · University of Oxford, UK · May 2024</div>
     </div>
 
     <div class="talk-card">
+      <div class="talk-badge">Invited Talk</div>
       <div class="talk-title">The Effect of Electoral Support for Far-Right on Institutional and Social Trust among Muslim Immigrants: Evidence from Germany</div>
       <div class="talk-meta">CESS Colloquium · Nuffield College, University of Oxford, UK · February 2024</div>
     </div>
 
     <div class="talk-card">
+      <div class="talk-badge">Invited Talk</div>
       <div class="talk-title">In What Direction? Replication and Extension of Oskooii 2020 "Perceived Discrimination and Political Behavior"</div>
       <div class="talk-meta">Replication Webinar Series · Young Scholars Initiative · November 2022</div>
     </div>
