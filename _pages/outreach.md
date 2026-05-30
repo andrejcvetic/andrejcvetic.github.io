@@ -116,16 +116,6 @@ nav_order: 3
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
-      <div class="talk-meta">European Political Science Association (EPSA) · Cologne · July 2024</div>
-    </div>
-
-    <div class="talk-card">
-      <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
-      <div class="talk-meta">UK Political Psychology (UK PolPsy) · Southampton · June 2024</div>
-    </div>
-
-    <div class="talk-card">
       <div class="talk-title">Autocratic Booms and Democratic Echoes: State Repression and Democratic Aspirations in Hybrid Regimes</div>
       <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · February 2026</div>
     </div>
@@ -133,6 +123,16 @@ nav_order: 3
     <div class="talk-card">
       <div class="talk-title">Host(ile) Country: Do Immigrants React to Electoral Support for the Far-Right in Germany?</div>
       <div class="talk-meta">German Political Psychology Network (24hPolPsy) · Vienna · September 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
+      <div class="talk-meta">European Political Science Association (EPSA) · Cologne · July 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
+      <div class="talk-meta">UK Political Psychology (UK PolPsy) · Southampton · June 2024</div>
     </div>
 
     <div class="talk-card">
@@ -148,14 +148,14 @@ nav_order: 3
 
     <div class="talk-card">
       <div class="talk-badge">Upcoming</div>
-      <div class="talk-title">It's Not Where They Come From, but What They Bring with Themselves: Gender Expression, Sexuality, and Disability in Attitudes towards Asylum Seekers</div>
-      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026</div>
+      <div class="talk-title">In the System We Trust! Electoral Support for the Populist Right and Political Trust Among Immigrants in Western Europe</div>
+      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-badge">Upcoming</div>
-      <div class="talk-title">In the System We Trust! Electoral Support for the Populist Right and Political Trust Among Immigrants in Western Europe</div>
-      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026</div>
+      <div class="talk-title">It's Not Where They Come From, but What They Bring with Themselves: Gender Expression, Sexuality, and Disability in Attitudes towards Asylum Seekers</div>
+      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026</div>
     </div>
 
     <div class="talk-card">
