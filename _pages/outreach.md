@@ -56,11 +56,11 @@ nav_order: 3
 .talk-card {
   border: 1px solid var(--global-divider-color);
   border-radius: 6px;
-  padding: 1rem 1.1rem;
+  padding: 0.75rem 1rem;
   background: var(--global-bg-color);
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.15rem;
 }
 
 .talk-card-badges {
@@ -83,6 +83,7 @@ nav_order: 3
   font-size: 0.85rem !important;
   font-weight: 600;
   color: var(--global-text-color);
+  margin-bottom: 0.2rem;
 }
 
 .talk-card .talk-meta {
