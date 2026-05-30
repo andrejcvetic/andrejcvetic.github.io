@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
         },{id: "nav-outreach",
           title: "outreach",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/outreach/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
           },
         },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
