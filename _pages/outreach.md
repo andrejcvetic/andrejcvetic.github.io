@@ -47,12 +47,6 @@ nav_order: 3
   display: block;
 }
 
-.talk-note {
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
-  margin-bottom: 1rem;
-}
-
 .talk-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -69,17 +63,21 @@ nav_order: 3
   gap: 0.35rem;
 }
 
+.talk-card .talk-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  margin-bottom: 0.1rem;
+}
+
 .talk-card .talk-title {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--global-text-color);
   flex-grow: 1;
-}
-
-.talk-card .talk-title.no-title {
-  font-style: italic;
-  font-weight: 400;
-  color: var(--global-text-color-light);
 }
 
 .talk-card .talk-meta {
@@ -99,12 +97,12 @@ nav_order: 3
 </div>
 
 <div id="conferences" class="tab-content active">
-  <p class="talk-note">* scheduled; † declined</p>
   <div class="talk-cards">
 
     <div class="talk-card">
+      <div class="talk-badge">Upcoming</div>
       <div class="talk-title">Autocratic Booms and Democratic Echoes: State Repression and Democratic Aspirations in Hybrid Regimes</div>
-      <div class="talk-meta">European Political Science Society (EPSS) · Belfast · June 2026*</div>
+      <div class="talk-meta">European Political Science Society (EPSS) · Belfast · June 2026</div>
     </div>
 
     <div class="talk-card">
@@ -136,22 +134,23 @@ nav_order: 3
 </div>
 
 <div id="workshops" class="tab-content">
-  <p class="talk-note">* scheduled; † declined</p>
   <div class="talk-cards">
 
     <div class="talk-card">
-      <div class="talk-title">When Normalisation Comes at No Cost? Legitimisation of the Populist Right and Mental Health of Immigrants</div>
-      <div class="talk-meta">Politics and Mental Health in Times of Societal Threat: Wicked or Not? · University of Amsterdam, Netherlands · March 2026†</div>
-    </div>
-
-    <div class="talk-card">
+      <div class="talk-badge">Upcoming</div>
       <div class="talk-title">It's not where they come from, but what they bring with themselves: Race, Sexuality and Disability in Attitudes Towards Immigrants</div>
-      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026*</div>
+      <div class="talk-meta">Migration, Asylum, and Human Security in Europe · University of Southampton, UK · 23 June 2026</div>
     </div>
 
     <div class="talk-card">
+      <div class="talk-badge">Upcoming</div>
       <div class="talk-title">In the System We Trust! Electoral Support for the Populist Right and Political Trust Among Immigrants in Western Europe</div>
-      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026*</div>
+      <div class="talk-meta">Research Workshop on Political Trust · Pompeu Fabra University, Barcelona · 14–16 October 2026</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">When Normalisation Comes at No Cost? Legitimisation of the Populist Right and Mental Health of Immigrants</div>
+      <div class="talk-meta">Politics and Mental Health in Times of Societal Threat: Wicked or Not? · University of Amsterdam, Netherlands · March 2026</div>
     </div>
 
     <div class="talk-card">
