@@ -132,12 +132,17 @@ nav_order: 3
 
     <div class="talk-card">
       <div class="talk-title">How Does Legitimising Radical Right Influence Muslim Immigrants in Germany? A Research Agenda</div>
-      <div class="talk-meta">UK Political Psychology (UK PolPsy) · Southampton · June 2024</div>
+      <div class="talk-meta">6th Annual UK Political Psychology Conference · Southampton · June 2024</div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Discrimination That Matters? Replication of "Perceived Discrimination and Political Behaviour" (BJPS, 2020)</div>
       <div class="talk-meta">Politicologenetmaal · Maastricht · June 2024</div>
+    </div>
+
+    <div class="talk-card">
+      <div class="talk-title">How Does Populist Right-Wing Electoral Performance Influence Political Attitudes of Immigrants in Western Europe?</div>
+      <div class="talk-meta">5th Annual UK Political Psychology Conference · Online · March 2023</div>
     </div>
 
   </div>
