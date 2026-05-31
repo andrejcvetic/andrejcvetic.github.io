@@ -120,7 +120,7 @@ nav_order: 2
 
 <div class="tab-buttons">
   <button class="tab-btn active" onclick="showTab('articles', this)">Peer Reviewed Articles</button>
-  <button class="tab-btn" onclick="showTab('underreview', this)">In Publication</button>
+  <button class="tab-btn" onclick="showTab('underreview', this)">Under Review</button>
   <button class="tab-btn" onclick="showTab('workingpapers', this)">Working Papers</button>
   <button class="tab-btn" onclick="showTab('preregistration', this)">In Progress</button>
   <button class="tab-btn" onclick="showTab('chapters', this)">Chapters</button>
