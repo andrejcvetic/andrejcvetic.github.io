@@ -1,0 +1,639 @@
+%% Personal CV (Andrej Cvetić).
+%% Build (from this folder): latexmk -pdf cvetic_cv.tex
+%% Build (from parent ``CV'' folder): latexmk -pdf 01_current_version/cvetic_cv.tex
+%%   (or latexmk -cd -pdf 01_current_version/cvetic_cv.tex — \addbibresource below also
+%%    locates publications.bib when the job cwd is the parent directory.)
+%% Data: publications.bib — list keys to show in \nocite{...} below.
+%% After you change \nocite{...} or publications.bib, biber must run or the PDF will
+%% keep an old .bbl (new keys show as ``Citation ... undefined'' and never print).
+%% Fix: ``latexmk -g -pdf cvetic_cv.tex'' or delete cvetic_cv.bbl then latexmk again.
+%% TeXShop ``Trash AUX Files'' only removes aux files next to this .tex (same folder,
+%% same basename). If you compile from the parent folder, .bbl/.bcf may live there
+%% instead—trash them manually or use ``latexmk -cd'' so aux files stay here. Optional:
+%% Terminal (optional): defaults write TeXShop OtherTrashExtensions -array-add "bbl"
+%% Each \nocite key must also match exactly one block below via keywords / entry type
+%% (e.g.\ @unpublished + keywords = {workinprogress} → Research in progress). Entries
+%% tagged only confabstract or cvopinion do not appear until you add a \printbibliography
+%% section for those keywords (see publications.bib header).
+%%
+%% For a blank starter others can copy, see cvetic_cv_template.tex (+ publications.example.bib).
+%% Standalone referees list: cvetic_references.tex (template: cv_references_template.tex).
+
+\documentclass[10pt, a4paper]{article}
+
+% ── Geometry ─────────────────────────────────────────────────────────────────
+\usepackage[top=0.95in, bottom=0.65in, left=0.90in, right=0.86in]{geometry}
+
+% ── Font: Palatino ────────────────────────────────────────────────────────────
+\usepackage{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+% ── Hyperlinks (burgundy) ─────────────────────────────────────────────────────
+\usepackage{xcolor}
+\definecolor{cvlink}{HTML}{722F37}% burgundy; tweak HTML hex if you want a different shade
+\definecolor{orcidgreen}{HTML}{A6CE39}% ORCID brand green (icon only)
+\usepackage{hyperref}
+\usepackage{pdftexcmds}% \pdf@strcmp for UTF-8-safe name matching (loaded by hyperref, explicit for clarity)
+\hypersetup{%
+  colorlinks=true,%
+  urlcolor=cvlink,%
+  linkcolor=cvlink,%
+  citecolor=cvlink,%
+  filecolor=cvlink,%
+  menucolor=cvlink%
+}
+
+% ── Bibliography (biber, Chicago 17th author-date) ───────────────────────────
+\usepackage[authordate, backend=biber, sorting=ydnt, maxbibnames=99,
+  dashed=false, doi=false, isbn=false, url=false, eprint=false]{biblatex-chicago}
+% Same-folder .bib when cwd is 01_current_version/; parent-relative when cwd is CV/.
+\IfFileExists{publications.bib}{%
+  \addbibresource{publications.bib}%
+}{%
+  \IfFileExists{01_current_version/publications.bib}{%
+    \addbibresource{01_current_version/publications.bib}%
+  }{%
+    \PackageError{cvetic_cv}{%
+      Missing publications.bib (place next to this .tex, or at %
+      01_current_version/publications.bib when building from the parent folder).%
+    }{%
+      See header comment for latexmk invocations.%
+    }%
+  }%
+}
+\setlength{\bibitemsep}{0.55\baselineskip}
+\renewcommand*{\bibfont}{\small}
+\newcommand{\cvbibtitleface}[1]{%
+  \ifboolexpr{%
+    test {\ifentrytype{article}} or test {\ifentrytype{inbook}} or test {\ifentrytype{incollection}} or test {\ifentrytype{inproceedings}} or test {\ifentrytype{patent}} or test {\ifentrytype{thesis}} or test {\ifentrytype{unpublished}}%
+  }%
+    {\mkbibquote{#1\isdot}}%
+    {%
+      \ifboolexpr{%
+        test {\ifentrytype{suppbook}} or test {\ifentrytype{suppcollection}} or test {\ifentrytype{suppperiodical}}%
+      }%
+        {#1}%
+        {\mkbibemph{#1}}%
+    }%
+}
+\newcommand{\cvbibtitlelinked}[1]{%
+  \iffieldundef{url}
+    {\iffieldundef{doi}
+      {\cvbibtitleface{#1}}
+      {\href{https://doi.org/\thefield{doi}}{\cvbibtitleface{#1}}}}
+    {\href{\thefield{url}}{\cvbibtitleface{#1}}}%
+}
+\DeclareFieldFormat{title}{\cvbibtitlelinked{#1}}
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{\cvbibtitlelinked{#1}}
+\DeclareFieldFormat
+  [suppbook,suppcollection,suppperiodical]
+  {title}{\cvbibtitlelinked{#1}}
+\ifbibmacroundef{doi+eprint+url}
+  {\newbibmacro*{doi+eprint+url}{%
+     \iftoggle{bbx:eprint}
+       {\usebibmacro{eprint}}
+       {}}}
+  {\renewbibmacro*{doi+eprint+url}{%
+     \iftoggle{bbx:eprint}
+       {\usebibmacro{eprint}}
+       {}}}
+% Numbered bib entries; counter restarts per \printbibliography.
+\newcounter{cvbibnum}
+\defbibenvironment{bibliography}
+  {\list
+     {\footnotesize\arabic{cvbibnum}.}%
+     {\usecounter{cvbibnum}%
+      \setlength{\labelwidth}{1.75em}%
+      \setlength{\labelsep}{0.45em}%
+      \setlength{\leftmargin}{\dimexpr\labelwidth+\labelsep\relax}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}%
+      \setlength{\topsep}{0pt}%
+      \setlength{\partopsep}{0pt}}}
+  {\endlist}
+  {\item}
+\newskip\cvbibvshift
+\cvbibvshift=0pt\relax
+\AtBeginBibliography{%
+  \ifdim\cvbibvshift=0pt\else\vspace{\cvbibvshift}\fi}
+% Hide parenthetical year for keyword workinprogress (year still used for sorting).
+\ifbibmacroundef{date+extradate}
+  {\newbibmacro*{date+extradate}{%
+     \ifkeyword{workinprogress}
+       {}
+       {\iffieldundef{labelyear}
+         {}
+         {\printtext[parens]{%
+            \iflabeldateisdate
+              {\printdateextra}
+              {\printlabeldateextra}}}}}}
+  {\renewbibmacro*{date+extradate}{%
+     \ifkeyword{workinprogress}
+       {}
+       {\iffieldundef{labelyear}
+         {}
+         {\printtext[parens]{%
+            \iflabeldateisdate
+              {\printdateextra}
+              {\printlabeldateextra}}}}}}
+% Bold ``Cvetić'' in bibliography (pdfLaTeX-safe via \pdf@strcmp + \detokenize).
+\makeatletter
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifnum\pdf@strcmp{\expandafter\detokenize\expandafter{#1}}{\detokenize{Cvetić}}=\z@
+    \textbf{#1}%
+  \else
+    #1%
+  \fi}
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifnum\pdf@strcmp{\expandafter\detokenize\expandafter{\namepartfamily}}{\detokenize{Cvetić}}=\z@
+    \textbf{#1}%
+  \else
+    #1%
+  \fi}
+\makeatother
+
+% ── Icons ─────────────────────────────────────────────────────────────────────
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\newcommand{\cvorcidinline}[1]{%
+  {\hypersetup{urlcolor=orcidgreen}%
+  \kern0.06em
+  \href{https://orcid.org/#1}{%
+    \raisebox{0.8ex}{\resizebox{!}{1.0ex}{\mbox{\faOrcid}}}}}}%
+
+% ── Tables & layout ───────────────────────────────────────────────────────────
+\usepackage{array}
+\usepackage{longtable}  % allows page breaks within the CV body table
+\usepackage{lastpage}
+\usepackage{needspace}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}% bare \par = new paragraph only; no vertical glue. Use \cvbetween / \cvservicebetween / explicit \vspace for visible gaps.
+\setlength{\LTpre}{0pt}   % no extra space before the longtable
+\setlength{\LTpost}{0pt}  % no extra space after  the longtable
+
+% ── Column widths ─────────────────────────────────────────────────────────────
+\newlength{\cvlabelwidth}
+\setlength{\cvlabelwidth}{1.15in}
+
+\newlength{\cvcontentwidth}
+\setlength{\cvcontentwidth}{\dimexpr\textwidth-\cvlabelwidth-6pt\relax}
+
+% Width reserved for the date column in \cvdatedline (widen if needed)
+\newlength{\cvdatewidth}
+\setlength{\cvdatewidth}{0.95in}
+\newlength{\cvdatelinegap}
+\setlength{\cvdatelinegap}{0.4em}
+
+% Text band width for \cvdatedline (excludes date column)
+\newlength{\cvtextbandwidth}
+\setlength{\cvtextbandwidth}{%
+  \dimexpr\cvcontentwidth-\cvdatewidth-\cvdatelinegap\relax}
+
+% Indent for extra discussant lines (same as ``Discussant:'' + gap in \small); see \cvservicehangmore.
+\newlength{\cvservicehangdiscusswd}
+\settowidth{\cvservicehangdiscusswd}{{\small\textbf{Discussant:}\hspace{0.35em}}}%
+% Tighten vertical gap between consecutive dated \cvservicehang / \cvservicehangmore (tabular→tabular).
+\newlength{\cvservicestacktighten}
+\setlength{\cvservicestacktighten}{3pt}
+\newcommand{\cvservicestacktight}{\vspace{-\cvservicestacktighten}}%
+
+% Vertical rhythm (change once; applies across the CV)
+\newlength{\cvsectionabove}
+\setlength{\cvsectionabove}{12pt}
+\newlength{\cvitemgap}
+\setlength{\cvitemgap}{6pt}
+\newcommand{\cvbetween}{\par\vspace{\cvitemgap}}
+\newcommand{\cvservicebetween}{\par\vspace{2.5pt}}% between \cvservicehang blocks when \parskip is 0 (tune 2.5pt)
+
+% Professional service: balance text→tabular vs tabular→text gaps (tune both together).
+\newlength{\cvproblockbalancetighten}
+\newlength{\cvproblockbalanceloosen}
+\setlength{\cvproblockbalancetighten}{1.5pt}
+\setlength{\cvproblockbalanceloosen}{1.5pt}
+\newcommand{\cvproblockaftersubhead}{\vspace{-\cvproblockbalancetighten}}%
+\newcommand{\cvproblockbeforesubhead}{\vspace{\cvproblockbalanceloosen}}%
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  COMMANDS
+% ─────────────────────────────────────────────────────────────────────────────
+
+% Header: name + optional ORCID (top-right); address (right)
+\newcommand{\cvheader}[3][]{%
+  \noindent
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    {%
+      \ifstrempty{#1}{%
+        {\fontsize{17.2}{20}\selectfont\bfseries #2}%
+      }{%
+        \begin{tabular}[t]{@{}l@{\hspace{0.22em}}r@{}}
+          {\fontsize{17.2}{20}\selectfont\bfseries #2} &
+          {\hypersetup{urlcolor=orcidgreen}%
+           \href{https://orcid.org/#1}{%
+             \raisebox{1.3ex}{\fontsize{7.25}{8}\selectfont\faOrcid}%
+           }%
+          } \\
+        \end{tabular}%
+      }%
+    } &
+    {\fontsize{8}{10}\selectfont
+    \begin{tabular}[b]{@{}r@{}}
+      #3
+    \end{tabular}}
+  \end{tabular*}%
+  \vspace{4pt}%
+}
+
+% Two-column body environment (longtable)
+% Left col : small, ragged-right  — for section labels
+% Right col: small — for entry content (\cvsection wraps in \parbox[t])
+\newenvironment{cvbody}{%
+  \setlength{\extrarowheight}{2pt}%
+  \begin{longtable}{%
+    @{}
+    >{\small\raggedright}p{\cvlabelwidth}
+    @{\hspace{6pt}}
+    >{\small}p{\cvcontentwidth}
+    @{}
+  }
+}{%
+  \end{longtable}%
+}
+
+% Section opener: top-aligned parboxes (label | first block).
+% \strut on the label gives the same first-line box height as normal paragraphs (and bib entries),
+% so the cap line lines up with body text; without it, \textsc can sit optically high vs. prose.
+\newcommand{\cvsection}[2]{%
+  \noalign{\vspace{\cvsectionabove}}%
+  \parbox[t]{\cvlabelwidth}{\raggedright\strut\textsc{#1}} &
+  \parbox[t]{\cvcontentwidth}{#2}\tabularnewline
+}
+% Like \cvsection but with a second line under the label (left column only), e.g.\ an italic note.
+\newcommand{\cvsectionSublabel}[3]{%
+  \noalign{\vspace{\cvsectionabove}}%
+  \parbox[t]{\cvlabelwidth}{%
+    \raggedright\strut\textsc{#1}\par
+    {\footnotesize\textit{#2}}%
+  } &
+  \parbox[t]{\cvcontentwidth}{#3}\tabularnewline
+}
+
+% Dated line: wrapping text + year column (top-aligned; years line up)
+\newcommand{\cvdatedline}[2]{%
+  \begin{tabular}[t]{@{}%
+    >{\raggedright\arraybackslash}p{\cvtextbandwidth}%
+    @{\hspace{\cvdatelinegap}}%
+    >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}%
+    #1 & #2\tabularnewline
+  \end{tabular}%
+}
+% Several dated rows in one tabular (avoids extra vertical glue from stacked \cvdatedline).
+\newenvironment{cvdatedblock}{%
+  \begin{tabular}[t]{@{}%
+    >{\raggedright\arraybackslash}p{\cvtextbandwidth}%
+    @{\hspace{\cvdatelinegap}}%
+    >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}%
+}{%
+  \end{tabular}%
+}
+\newcommand{\cvdatedrow}[2]{#1 & #2\tabularnewline}
+
+
+\newlength{\cvteachgapone}
+\setlength{\cvteachgapone}{0.8em}
+\newlength{\cvteachgaptwo}
+\setlength{\cvteachgaptwo}{-1.2em}
+\newlength{\cvteachlevelwidth}
+\setlength{\cvteachlevelwidth}{1.18in}
+\newlength{\cvteachyearswidth}
+\setlength{\cvteachyearswidth}{\cvdatewidth}
+\newlength{\cvteachcoursewidth}
+\setlength{\cvteachcoursewidth}{%
+  \dimexpr\cvcontentwidth-\cvteachlevelwidth-\cvteachyearswidth-\cvteachgapone-\cvteachgaptwo\relax}
+\newenvironment{cvteachblock}{%
+  \begin{tabular}[t]{@{}%
+    >{\raggedright\arraybackslash}p{\cvteachcoursewidth}%
+    @{\hspace{\cvteachgapone}}%
+    >{\raggedright\arraybackslash}p{\cvteachlevelwidth}%
+    @{\hspace{\cvteachgaptwo}}%
+    >{\raggedleft\arraybackslash}p{\cvteachyearswidth}@{}}%
+}{%
+  \end{tabular}%
+}
+\newcommand{\cvteachrow}[3]{\hspace{0.75em}#1 & #2 & #3\tabularnewline}
+
+% Service to discipline: true hanging paragraph after each ``Label:'' (continuation lines align with body).
+% \cvservicehang[year]{label}{body} — text band + right-aligned year (same total width as \cvdatedline).
+% \cvservicehang{label}{body}        — full \cvcontentwidth, no year column (Referee / Member).
+% \cvservicehangmore[year]{body}     — extra discussant row: no label, same left indent as after ``Discussant:''.
+% \cvservicehangmore{body}           — same, full width (no year column).
+\makeatletter
+\newcommand{\cvservicehang}{\@ifnextchar[{\cvservicehang@dated}{\cvservicehang@plain}}%
+\def\cvservicehang@dated[#1]#2#3{%
+  \noindent
+  \begin{tabular}[t]{@{}%
+    p{\cvtextbandwidth}%
+    @{\hspace{\cvdatelinegap}}%
+    >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}%
+  \cv@hangpar{\cvtextbandwidth}{#2}{#3} & #1\tabularnewline
+  \end{tabular}\par
+}%
+\def\cvservicehang@plain#1#2{%
+  \noindent\cv@hangpar{\cvcontentwidth}{#1}{#2}\par
+}%
+\newcommand{\cv@hangpar}[3]{%
+  \parbox[t]{#1}{%
+    \begingroup
+    \raggedright
+    \settowidth{\dimen@}{#2\hspace{0.35em}}%
+    \hangindent=\dimen@
+    \hangafter\@ne
+    \noindent #2\hspace{0.35em}\ignorespaces #3\par
+    \endgroup
+  }%
+}%
+\newcommand{\cvservicehangmore}{\@ifnextchar[{\cvservicehangmore@dated}{\cvservicehangmore@plain}}%
+\def\cvservicehangmore@dated[#1]#2{%
+  \noindent
+  \begin{tabular}[t]{@{}%
+    p{\cvtextbandwidth}%
+    @{\hspace{\cvdatelinegap}}%
+    >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}%
+  \cv@hangparcont{\cvtextbandwidth}{#2} & #1\tabularnewline
+  \end{tabular}\par
+}%
+\def\cvservicehangmore@plain#1{%
+  \noindent\cv@hangparcont{\cvcontentwidth}{#1}\par
+}%
+\newcommand{\cv@hangparcont}[2]{%
+  \parbox[t]{#1}{%
+    \begingroup
+    \raggedright
+    \leftskip=\cvservicehangdiscusswd
+    \noindent\ignorespaces #2\par
+    \endgroup
+  }%
+}%
+\makeatother
+
+% Subsequent entries (left col empty)
+\newcommand{\cvitem}[1]{%
+  & #1 \tabularnewline
+}
+
+% ── Footer ────────────────────────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\fontsize{8}{10}\selectfont \thepage\ of \pageref{LastPage}}
+\fancyfoot[R]{\fontsize{8}{10}\selectfont Andrej Cvetić \quad \today}
+
+\begin{document}
+
+% ── HEADER ───────────────────────────────────────────────────────────────────
+\cvheader[0000-0002-6668-0171]{Andrej Cvetić}{%
+  Department of Political Science \\
+  Trinity College Dublin \\
+  3 College Green, Dublin 2, D02 XH97, Ireland \\
+  \href{mailto:cvetica@tcd.ie}{cvetica@tcd.ie} \\
+  \href{https://andrejcvetic.github.io}{andrejcvetic.github.io}%
+}
+
+% CV-visible publication keys only (see publications.bib). Rebuild with biber after edits.
+\nocite{%
+  cvetic2022bourdieu,cvetic2021rsc,cvetic2016asexuality,cvetic2016asexualitysr,%
+  cvetic2020reviewkhalil,cvetic2019reviewmalesevic,%
+  cveticwipdiscrimination,cveticwipautocratic,cveticwiphandbook,cveticwiptrust,%
+  cveticwipimmigrantsattrs,cveticwipradicalhealth,cveticwipsystemtrust,%
+  cveticwipsuicide,%
+}
+
+\begin{cvbody}
+
+% ── EDUCATION ────────────────────────────────────────────────────────────────
+\cvsection{Education}{%
+  \cvdatedline{%
+    \textbf{Trinity College Dublin}\par
+    Ph.D.\ in Political Science\par
+    Thesis: \href{https://www.tara.tcd.ie/items/911960f8-0ae5-4297-a738-b58b9327abdc}{\textit{Host(ile) Country: Immigrants and the Populist Right Surge}}\par
+    Supervisor: Dr.~Gizem Arikan\cvorcidinline{0000-0002-2083-7321}\par
+    Committee: Dr.~Kristina Bakkær Simonsen\cvorcidinline{0000-0002-8049-7744} \&
+    Dr.~Thomas Chadefaux\cvorcidinline{0000-0002-8456-8124}%
+  }{2026}%
+}
+\cvitem{%
+  \textbf{University of Belgrade}\par
+  M.A.\ in International Relations \hfill 2021\par
+  M.A.\ in Sociology \hfill 2020\par
+  B.A.\ in Sociology \hfill 2017%
+}
+
+% ── AFFILIATIONS ─────────────────────────────────────────────────────────────
+\cvsection{Affiliations}{%
+  \begin{cvdatedblock}%
+  \cvdatedrow{%
+   TRiSS Visiting Scholar, Trinity Research in Social Sciences (TRiSS), Trinity College Dublin}{2026}
+  \cvdatedrow{%
+    \href{https://www.tcd.ie/triss/people/phdstudents/cvetic.php}{Ph.D. Researcher}, Trinity Research in Social Sciences (TRiSS), Trinity College Dublin%
+  }{2021--2025}%
+  \cvdatedrow{%
+    \href{https://ifdt.bg.ac.rs/dt_team/cvetic-andrej/?lang=en}{Associate Researcher}, Institute for Philosophy and Social Theory, University of Belgrade%
+  }{2021--}%
+  \end{cvdatedblock}%
+}
+
+% ── RESEARCH \& METHODS ───────────────────────────────────────────────────────
+\cvsection{Research\newline \& Methods}{%
+  \textit{Research:} political behaviour, immigration, trust, identity, attitudes, mental health\par
+  \textit{Methods:} experimental, quasi-experimental and observational designs, automated textual analysis, interviews%
+}
+
+% ── PUBLICATIONS (biber + publications.bib) ─────────────────────────────────
+% Filters: article (not bookreview) | underreview | workingpaper | workinprogress | incollection | bookreview.
+\cvsection{Peer-reviewed\newline articles}{%
+  \printbibliography[heading=none, type=article, notkeyword=bookreview]%
+}
+\cvsection{Under\newline Review}{%
+  \printbibliography[heading=none, keyword=underreview]%
+}
+\cvsection{Working\newline Papers}{%
+  \printbibliography[heading=none, keyword=workingpaper, notkeyword=underreview]%
+}
+\cvsection{Research in\newline Progress}{%
+  \printbibliography[heading=none, keyword=workinprogress]%
+}
+
+\cvsection{Book Chapters}{%
+  \printbibliography[heading=none, type=incollection]%
+}
+
+\cvsection{Book\newline Reviews}{%
+  \printbibliography[heading=none, keyword=bookreview]%
+}
+
+% ── FUNDING ───────────────────────────────────────────────────────────────────
+\cvsection{Funding}{%
+  \begin{cvdatedblock}%
+  \cvdatedrow{\textbf{Research Ireland}, Government of Ireland Postgraduate Scholarship (€56.000; GOIPG/2023/4875)}{2023--2025}%
+  \cvdatedrow{\textbf{Trinity College Dublin}, Provost's PhD Project Award (€34.000)}{2021--2023}%
+  \cvdatedrow{\textbf{University of Novi Sad}, ``Dr.\ Zoran Đinđić Award'' (€3000)}{2020}%
+  \cvdatedrow{\textbf{OSCE Mission to Serbia}, Master Scholarship (€1000)}{2018}%
+  \end{cvdatedblock}%
+}
+
+% ── CONFERENCES ──────────────────────────────────────────────────────────────
+\cvsectionSublabel{Conferences}{*\,scheduled; \dag\,declined}{%
+  \begin{cvdatedblock}%
+  \cvdatedrow{European Political Science Society (EPSS)}{2026$^{*}$}%
+  \cvdatedrow{European Political Science Association (EPSA)}{2024}%
+  \cvdatedrow{UK Political Psychology}{2024, 2023}%
+  \cvdatedrow{German Political Psychology Network}{2026$^{\dag}$, 2024}%
+  \cvdatedrow{Politicologenetmaal}{2024}%
+  \end{cvdatedblock}%
+}
+
+% ── WORKSHOPS \& INVITED TALKS ───────────────────────────────────────────────
+\cvsectionSublabel{Workshops\newline \& Invited\newline Talks}{*\,scheduled; \dag\,declined}{%
+  \begin{cvdatedblock}%
+  \cvdatedrow{Research Workshop on Political Trust, Pompeu Fabra University (October)$^{*}$; Migration, Asylum, and Human Security in Europe, University of Southampton (June)$^{*}$; Politics and Mental Health in Times of Societal Threat: Wicked or Not?, University of Amsterdam (March)$^{\dag}$}{2026}%
+  \cvdatedrow{%
+    COMPAS Work in Progress Series, University of Oxford (May); CESS Colloquium, Nuffield College, University of Oxford (February)%
+  }{2024}%
+  \cvdatedrow{Replication Webinar Series, Young Scholars Initiative (November)}{2022}%
+  \end{cvdatedblock}%
+}
+
+% ── TEACHING ─────────────────────────────────────────────────────────────────
+\cvsection{Teaching}{%
+  \noindent\textbf{Trinity College Dublin}\par
+  \noindent\textit{Teaching Assistant}\par
+  \begin{cvteachblock}%
+  \cvteachrow{POU22031 Comparative Politics A}{Undergraduate}{2021--2024}%
+  \cvteachrow{POU22032 Comparative Politics B}{Undergraduate}{2022--2025}%
+  \end{cvteachblock}\par
+  \noindent\textit{One-on-One Tutor}\par
+  \noindent\textit{(students with learning differences)}\par
+  \begin{cvteachblock}%
+  \cvteachrow{POU33012 Research Methods for Political Science B}{Undergraduate}{2026}%
+  \cvteachrow{POU33174 Qualitative Research Methods}{Undergraduate}{2026}%
+  \end{cvteachblock}\par
+  \noindent\textit{Grader}\par
+  \begin{cvteachblock}%
+  \cvteachrow{POU22040 Introduction to Political Science Research}{Undergraduate}{2024}%
+  \cvteachrow{POU11022 Politics and Irish Society B}{Undergraduate}{2023}%
+  \end{cvteachblock}\par
+  \cvbetween
+  \noindent\textbf{University of Belgrade}\par
+  \noindent\textit{Teaching Assistant}\par
+  \begin{cvteachblock}%
+  \cvteachrow{Introduction to Sociology}{Undergraduate}{2018--2019}%
+  \end{cvteachblock}%
+}
+
+% ── PROFESSIONAL SERVICE ───────────────────────────────────────────────────────
+\cvsection{Professional\newline service}{%
+  \textbf{Service to Discipline}\par
+  \cvdatedline{\href{https://regsecjournal.com/}{Book Review Editor}, \textit{Journal of Regional Security}}{2020--2026}\par
+  \cvservicehang[2026]{\textbf{Discussant:}}{\textit{EPSS Diversity Lunch Roundtable}: Tackling Barriers in the Discipline: Disability, Chronic Illness, Neurodivergence, and Mental Health (June); \textit{Migration Studies} Special Issue Workshop ``Irregular Migrants in Europe'' (April)} %
+  % Further discussant venues: use \cvservicehangmore (no repeated ``Discussant:''); fill [...] and {...}.
+  \cvservicehangmore[2024]{EPSA (July); Politicologenetmaal (June)}{}%
+  %EPSA (Panel: Patterns in International Migration); Politicologenetmaal (Workshop: Discrimination, political engagement and intersectionality)
+  \cvservicebetween
+  % Referee: append ``(x$N$)'' after a journal title for review count ($N$ times), e.g.\ \textit{Journal Name} (x3).
+  \cvservicehang{\textbf{Referee:}}{%
+    \textit{Migration Studies}, \textit{Ethnicities}, \textit{Journal of Regional Security}%
+  }%
+  \cvservicebetween
+  \cvservicehang{\textbf{Member:}}{%
+    European Political Science Society (EPSS), International Society of Political Psychology (ISPP), Political Studies Association (PSA), Political Studies Association of Ireland (PSAI).%
+  }%
+  \cvbetween
+  \textbf{Trinity College Dublin}\par
+  \textit{Department of Political Science}\par
+  \cvproblockaftersubhead
+  \begin{cvdatedblock}%
+  \cvdatedrow{\hspace{1em}Discussant, Friday Seminar Series}{2023--2026}%
+  \cvdatedrow{\hspace{1em}Session convenor, Monday Seminar Series}{2025}%
+  \cvdatedrow{\hspace{1em}Initiator \& Convenor, Book Reviewing Workshop Series}{2021--2025}%
+  \cvdatedrow{\hspace{1em}Research assistant to Dr.~Jeffrey Ziegler\cvorcidinline{0000-0003-3905-7488}}{2025}%
+  \cvdatedrow{\hspace{1em}Research assistant to Dr.~Gizem Arikan\cvorcidinline{0000-0002-2083-7321}}{2022--23}%
+  \end{cvdatedblock}\par
+  \cvproblockbeforesubhead
+  \textit{Assessment and Progression}\par
+  \cvproblockaftersubhead
+  \begin{cvdatedblock}%
+  \cvdatedrow{\hspace{1em}Senior invigilator}{2022--2026}%
+  \cvdatedrow{\hspace{1em}Standard invigilator}{2021--2022}%
+  \end{cvdatedblock}\par
+  \cvproblockbeforesubhead
+  \textit{Trinity Access Programme}\par
+  \cvproblockaftersubhead
+  \cvdatedline{\hspace{1em}Tutor}{2024--2025}\par
+  \textit{Disability Service}\par
+  \cvproblockaftersubhead
+  \cvdatedline{\hspace{1em}Tutor}{2026}%
+}
+
+% ── PROFESSIONAL DEVELOPMENT ────────────────────────────────────────────────
+\cvsection{Professional\newline Development}{%
+  \begin{cvdatedblock}%
+  \cvdatedrow{%
+    EPSS Mentorship Program (mentor: Dr.~Emma Hoes\cvorcidinline{0000-0002-8063-5430}), EPSS Diversity Committee%
+  }{2026--2027}%
+  \cvdatedrow{%
+    EPSA LGBTQ+ Mentoring Scheme (mentor: Dr.~William L. Allen\cvorcidinline{0000-0003-3185-1468}), EPSA LGBTQ+ Group%
+  }{2023--2026}%
+  \cvdatedrow{%
+    Research Integrity and Impact Certificate, Trinity College Dublin%
+  }{2022}%
+  \cvdatedrow{%
+    Data Protection Certificate, Trinity College Dublin%
+  }{2022}%
+  \end{cvdatedblock}%
+}
+
+% ── METHODS TRAINING ─────────────────────────────────────────────────────────
+\cvsection{Methods\newline training}{%
+  \begin{cvdatedblock}%
+  \cvdatedrow{%
+    Panel and Pooled Data Analysis, short course with Dr.~Vera E.~Troeger\cvorcidinline{0000-0002-6978-3053}, University of Bergen%
+  }{2022}%
+  \cvdatedrow{%
+    Strong Research Design, masterclass with Dr.~Lene Hansen\cvorcidinline{0000-0001-7918-3943}, University of Belgrade%
+  }{2019}%
+  \cvdatedrow{%
+    Research Design in International Relations, workshop with Dr.~Stefano Guzzini\cvorcidinline{0000-0001-7721-6983}, University of Belgrade%
+  }{2019}%
+  \end{cvdatedblock}%
+}
+
+% ── CODING \& SOFTWARE ───────────────────────────────────────────────────────
+\cvsection{Coding \&\newline Software}{%
+  Coding: R, \LaTeX, Git, SQL, Markdown, HTML\par
+  Software: Qualtrics, STATA, QGIS, SPSS%
+}
+
+% ── LANGUAGES ────────────────────────────────────────────────────────────────
+\cvsection{Languages}{%
+  Serbian (native), English (proficient), Russian (basic)%
+}
+
+% ── NON-ACADEMIC EMPLOYMENT ────────────────────────────────────────────────────
+\cvsection{Non-academic\newline Employment}{%
+  \cvdatedline{Communications Assistant, MDPI, Belgrade, Serbia}{2020--2021}%
+}
+
+% ── REFERENCES ──────────────────────────────────────────────────────────────
+\cvsection{References}{%
+  Available upon request.%
+}
+
+\end{cvbody}
+
+\end{document}
