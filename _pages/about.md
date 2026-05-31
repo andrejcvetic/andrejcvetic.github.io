@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am (mostly) quantitative political scientist interested in political psychology, public opinion, and comparative politics. I am **currently on the job market**, after obtaining my PhD in political science from <a href="https://www.tcd.ie/political-science/">Trinity College Dublin</a>. So far, my work has been supported by Research Ireland (<a href="https://research.ie/assets/uploads/2023/09/GOI-Awardee-list-2023.pdf">Government of Ireland Postgraduate Scholar, 2023-2025</a>) and Trinity College Dublin (Provost's Ph.D. Award, 2021-2023). 
+I am (mostly) quantitative political scientist interested in political psychology, public opinion, and comparative politics. I am **currently on the job market**, after obtaining my <a href="https://www.tara.tcd.ie/items/911960f8-0ae5-4297-a738-b58b9327abdc">PhD in political science</a> from <a href="https://www.tcd.ie/political-science/">Trinity College Dublin</a>. So far, my work has been supported by Research Ireland (<a href="https://research.ie/assets/uploads/2023/09/GOI-Awardee-list-2023.pdf">Government of Ireland Postgraduate Scholar, 2023-2025</a>) and Trinity College Dublin (Provost's Ph.D. Award, 2021-2023). 
 
 I study how people navigate situations of political and social hostility. The cornerstone of my work is that various cognitive, emotional and social resources people draw on can determine the outcomes of political hostilities. So far, I explored:
 
