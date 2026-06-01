@@ -32,4 +32,4 @@ I study how people navigate situations of political and social hostility. The co
 * why citizens in hybrid regimes support democracy when exposed to state repression
 * how asexual individuals negotiate their identities, despite widespread mistrust and discrimination
 
-I develop and test these insights using experimental and quasi-experimental designs, longitudinal surveys, automated textual analysis and interviews. I apply these insights to understand the both immediate and long-term consequences of political hostilities on individuals and communities.   
+I develop and test these insights using experimental and quasi-experimental designs, longitudinal surveys, automated textual analysis and interviews. I apply these insights to understand both the immediate and long-term consequences of political hostilities on individuals and communities.   
