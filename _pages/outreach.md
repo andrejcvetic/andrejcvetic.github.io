@@ -115,7 +115,6 @@ nav_order: 3
   <div class="talk-cards">
 
     <div class="talk-card">
-      <div class="talk-badge">Upcoming</div>
       <div class="talk-title">Autocratic Booms and Democratic Echoes: State Repression and Democratic Aspirations in Hybrid Regimes</div>
       <div class="talk-meta">European Political Science Society (EPSS) · Belfast · June 2026</div>
     </div>
@@ -167,7 +166,6 @@ nav_order: 3
 
     <div class="talk-card">
       <div class="talk-card-badges">
-        <div class="talk-badge">Upcoming</div>
         <div class="talk-badge">Workshop</div>
       </div>
       <div class="talk-title">It's Not Where They Come From, but What They Bring with Themselves: Gender Expression, Sexuality, and Disability in Attitudes towards Asylum Seekers</div>
